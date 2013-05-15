@@ -81,9 +81,11 @@
             this.anslutTillDatabasToolStripMenuItem.Name = "anslutTillDatabasToolStripMenuItem";
             this.anslutTillDatabasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.anslutTillDatabasToolStripMenuItem.Text = "Anslut till databas";
+            this.anslutTillDatabasToolStripMenuItem.Click += new System.EventHandler(this.anslutTillDatabasToolStripMenuItem_Click);
             // 
             // kopplaFrånDatabasToolStripMenuItem
             // 
+            this.kopplaFrånDatabasToolStripMenuItem.Enabled = false;
             this.kopplaFrånDatabasToolStripMenuItem.Name = "kopplaFrånDatabasToolStripMenuItem";
             this.kopplaFrånDatabasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.kopplaFrånDatabasToolStripMenuItem.Text = "Koppla från databas";
