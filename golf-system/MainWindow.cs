@@ -31,5 +31,18 @@ namespace golf_system
         {
 
         }
+
+        private void databasinställningarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Create database window and show it as a modal dialog
+            var dbsettings_window = new DatabaseSettings();
+            dbsettings_window.ShowDialog();
+        }
+
+        private void avslutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Exit the application
+            Application.Exit();
+        }
     }
 }
