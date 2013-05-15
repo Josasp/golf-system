@@ -16,5 +16,20 @@ namespace golf_system
         {
             InitializeComponent();
         }
+
+        private void läggTillMedlemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bokaTidToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void visaBokningarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
