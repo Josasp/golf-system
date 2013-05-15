@@ -48,7 +48,10 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.connected_statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -89,6 +92,7 @@
             this.kopplaFrånDatabasToolStripMenuItem.Name = "kopplaFrånDatabasToolStripMenuItem";
             this.kopplaFrånDatabasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.kopplaFrånDatabasToolStripMenuItem.Text = "Koppla från databas";
+            this.kopplaFrånDatabasToolStripMenuItem.Click += new System.EventHandler(this.kopplaFrånDatabasToolStripMenuItem_Click);
             // 
             // databasinställningarToolStripMenuItem
             // 
@@ -197,17 +201,36 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(191, 6);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connected_statusLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 361);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(426, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // connected_statusLabel
+            // 
+            this.connected_statusLabel.Name = "connected_statusLabel";
+            this.connected_statusLabel.Size = new System.Drawing.Size(64, 17);
+            this.connected_statusLabel.Text = "Ej ansluten";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 383);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainWindow";
             this.Text = "Golf System";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,6 +258,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem bokningslistaToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel connected_statusLabel;
     }
 }
 

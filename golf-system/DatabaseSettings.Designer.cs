@@ -40,6 +40,7 @@
             this.password_textBox = new System.Windows.Forms.TextBox();
             this.save_button = new System.Windows.Forms.Button();
             this.cancel_button = new System.Windows.Forms.Button();
+            this.ssl_checkBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 120);
+            this.label3.Location = new System.Drawing.Point(12, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 4;
@@ -86,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 161);
+            this.label4.Location = new System.Drawing.Point(12, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 5;
@@ -96,7 +97,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 53);
+            this.label5.Location = new System.Drawing.Point(12, 59);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 6;
@@ -105,14 +106,15 @@
             // 
             // database_textBox
             // 
-            this.database_textBox.Location = new System.Drawing.Point(15, 70);
+            this.database_textBox.Location = new System.Drawing.Point(15, 76);
             this.database_textBox.Name = "database_textBox";
             this.database_textBox.Size = new System.Drawing.Size(201, 22);
             this.database_textBox.TabIndex = 7;
+            this.database_textBox.TextChanged += new System.EventHandler(this.database_textBox_TextChanged);
             // 
             // username_textBox
             // 
-            this.username_textBox.Location = new System.Drawing.Point(15, 136);
+            this.username_textBox.Location = new System.Drawing.Point(15, 141);
             this.username_textBox.Name = "username_textBox";
             this.username_textBox.Size = new System.Drawing.Size(200, 22);
             this.username_textBox.TabIndex = 8;
@@ -120,7 +122,7 @@
             // password_textBox
             // 
             this.password_textBox.BackColor = System.Drawing.SystemColors.Window;
-            this.password_textBox.Location = new System.Drawing.Point(15, 177);
+            this.password_textBox.Location = new System.Drawing.Point(15, 182);
             this.password_textBox.Name = "password_textBox";
             this.password_textBox.PasswordChar = '*';
             this.password_textBox.Size = new System.Drawing.Size(200, 22);
@@ -128,7 +130,7 @@
             // 
             // save_button
             // 
-            this.save_button.Location = new System.Drawing.Point(96, 231);
+            this.save_button.Location = new System.Drawing.Point(96, 236);
             this.save_button.Name = "save_button";
             this.save_button.Size = new System.Drawing.Size(115, 23);
             this.save_button.TabIndex = 10;
@@ -138,7 +140,7 @@
             // 
             // cancel_button
             // 
-            this.cancel_button.Location = new System.Drawing.Point(15, 231);
+            this.cancel_button.Location = new System.Drawing.Point(15, 236);
             this.cancel_button.Name = "cancel_button";
             this.cancel_button.Size = new System.Drawing.Size(75, 23);
             this.cancel_button.TabIndex = 11;
@@ -146,11 +148,23 @@
             this.cancel_button.UseVisualStyleBackColor = true;
             this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
+            // ssl_checkBox
+            // 
+            this.ssl_checkBox.AutoSize = true;
+            this.ssl_checkBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ssl_checkBox.Location = new System.Drawing.Point(173, 53);
+            this.ssl_checkBox.Name = "ssl_checkBox";
+            this.ssl_checkBox.Size = new System.Drawing.Size(43, 17);
+            this.ssl_checkBox.TabIndex = 12;
+            this.ssl_checkBox.Text = "SSL";
+            this.ssl_checkBox.UseVisualStyleBackColor = true;
+            // 
             // DatabaseSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(223, 263);
+            this.ClientSize = new System.Drawing.Size(223, 269);
+            this.Controls.Add(this.ssl_checkBox);
             this.Controls.Add(this.cancel_button);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.password_textBox);
@@ -184,5 +198,6 @@
         private System.Windows.Forms.TextBox password_textBox;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.Button cancel_button;
+        private System.Windows.Forms.CheckBox ssl_checkBox;
     }
 }

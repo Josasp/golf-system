@@ -1,4 +1,5 @@
 ﻿using golf_system.Properties;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,8 @@ namespace golf_system
         {
             InitializeComponent();
         }
+
+        protected NpgsqlConnection dbConnection;
 
         private void läggTillMedlemToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -62,7 +65,34 @@ namespace golf_system
                 ))
             {
                 //In case it is...
-                //TODO Connect to database
+
+                //Set port to default port if no other port has been set
+                String port = Settings.Default["db_port"].ToString().Length < 1 ? "5432" : Settings.Default["db_database"].ToString();
+
+                //Set add SSL enabled to connction string if set in settings
+                String ssl = (bool)Settings.Default["db_ssl"]?"SSL=true;SslMode=Require;":"";
+
+                //Connect to database
+                dbConnection = new NpgsqlConnection(
+                    "Server="       + Settings.Default["db_address"].ToString() +
+                    ";Port="        + port +
+                    ";User Id="     + Settings.Default["db_username"].ToString()  +
+                    ";Password="    + Settings.Default["db_password"].ToString()  +
+                    ";Database="    + Settings.Default["db_database"].ToString() +
+                    ";" + ssl);
+
+                try
+                {
+                    dbConnection.Open();
+                    kopplaFrånDatabasToolStripMenuItem.Enabled = true;
+                    anslutTillDatabasToolStripMenuItem.Enabled = false;
+                    connected_statusLabel.Text = "Ansluten";
+                }
+                catch
+                {
+                    MessageBox.Show("Det gick inte att ansluta till databasen!",
+                    "Anslutningsfel");
+                }
             }
             else
             {
@@ -71,6 +101,14 @@ namespace golf_system
                     "Inställnignar saknas");
                 openDatabaseSettings();
             }
+        }
+
+        private void kopplaFrånDatabasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dbConnection.Close();
+            kopplaFrånDatabasToolStripMenuItem.Enabled = false;
+            anslutTillDatabasToolStripMenuItem.Enabled = true;
+            connected_statusLabel.Text = "Frånkopplad";
         }
     }
 }

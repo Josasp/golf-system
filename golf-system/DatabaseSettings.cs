@@ -22,6 +22,7 @@ namespace golf_system
             database_textBox.Text   = (String) Settings.Default["db_database"];
             username_textBox.Text   = (String) Settings.Default["db_username"];
             password_textBox.Text   = (String) Settings.Default["db_password"];
+            ssl_checkBox.Checked    = (bool)   Settings.Default["db_ssl"];
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace golf_system
             Settings.Default["db_database"] = database_textBox.Text;
             Settings.Default["db_username"] = username_textBox.Text;
             Settings.Default["db_password"] = password_textBox.Text;
+            Settings.Default["db_ssl"]      = ssl_checkBox.Checked;
             Settings.Default.Save();
             this.Close();
         }
@@ -53,6 +55,11 @@ namespace golf_system
         private void cancel_button_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void database_textBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

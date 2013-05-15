@@ -82,5 +82,17 @@ namespace golf_system.Properties {
                 this["db_password"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool db_ssl {
+            get {
+                return ((bool)(this["db_ssl"]));
+            }
+            set {
+                this["db_ssl"] = value;
+            }
+        }
     }
 }
