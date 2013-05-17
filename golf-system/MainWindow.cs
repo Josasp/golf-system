@@ -116,6 +116,7 @@ namespace golf_system
             Member m = new Member();
             var mf = new MemberForm(ref m);
             mf.ShowDialog();
+            MessageBox.Show(m.FirstName);
         }
 
         private void medlemslistaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -130,6 +131,7 @@ namespace golf_system
 
             //TODO Replace the example bit with query from database, loop trough data.
             //Add an example row
+
             DataRow dr = dt.NewRow();
             dr["golfId"] = "910923-001";
             dr["firstName"] = "Johannes";
