@@ -37,17 +37,17 @@
             this.avslutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medlemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nyMedlemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.medlemslistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tidsbokningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tävlingarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nyTävlingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tävlingslistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tidsbokningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bokaStarttidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bokaÖvrigVerksamhetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bokningslistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.bokningslistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.connected_statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
@@ -63,7 +63,7 @@
             this.tidsbokningToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(426, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(641, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -128,23 +128,19 @@
             this.nyMedlemToolStripMenuItem.Name = "nyMedlemToolStripMenuItem";
             this.nyMedlemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nyMedlemToolStripMenuItem.Text = "Ny medlem";
+            this.nyMedlemToolStripMenuItem.Click += new System.EventHandler(this.nyMedlemToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // medlemslistaToolStripMenuItem
             // 
+            this.medlemslistaToolStripMenuItem.Enabled = false;
             this.medlemslistaToolStripMenuItem.Name = "medlemslistaToolStripMenuItem";
             this.medlemslistaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.medlemslistaToolStripMenuItem.Text = "Medlemslista";
-            // 
-            // tidsbokningToolStripMenuItem
-            // 
-            this.tidsbokningToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bokaStarttidToolStripMenuItem,
-            this.bokaÖvrigVerksamhetToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.bokningslistaToolStripMenuItem});
-            this.tidsbokningToolStripMenuItem.Name = "tidsbokningToolStripMenuItem";
-            this.tidsbokningToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.tidsbokningToolStripMenuItem.Text = "Tidsbokning";
             // 
             // tävlingarToolStripMenuItem
             // 
@@ -158,56 +154,67 @@
             // 
             // nyTävlingToolStripMenuItem
             // 
+            this.nyTävlingToolStripMenuItem.Enabled = false;
             this.nyTävlingToolStripMenuItem.Name = "nyTävlingToolStripMenuItem";
             this.nyTävlingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nyTävlingToolStripMenuItem.Text = "Ny Tävling";
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(136, 6);
+            // 
             // tävlingslistaToolStripMenuItem
             // 
+            this.tävlingslistaToolStripMenuItem.Enabled = false;
             this.tävlingslistaToolStripMenuItem.Name = "tävlingslistaToolStripMenuItem";
             this.tävlingslistaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tävlingslistaToolStripMenuItem.Text = "Tävlingslista";
             // 
+            // tidsbokningToolStripMenuItem
+            // 
+            this.tidsbokningToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bokaStarttidToolStripMenuItem,
+            this.bokaÖvrigVerksamhetToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.bokningslistaToolStripMenuItem});
+            this.tidsbokningToolStripMenuItem.Name = "tidsbokningToolStripMenuItem";
+            this.tidsbokningToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.tidsbokningToolStripMenuItem.Text = "Tidsbokning";
+            // 
             // bokaStarttidToolStripMenuItem
             // 
+            this.bokaStarttidToolStripMenuItem.Enabled = false;
             this.bokaStarttidToolStripMenuItem.Name = "bokaStarttidToolStripMenuItem";
             this.bokaStarttidToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.bokaStarttidToolStripMenuItem.Text = "Boka starttid";
             // 
             // bokaÖvrigVerksamhetToolStripMenuItem
             // 
+            this.bokaÖvrigVerksamhetToolStripMenuItem.Enabled = false;
             this.bokaÖvrigVerksamhetToolStripMenuItem.Name = "bokaÖvrigVerksamhetToolStripMenuItem";
             this.bokaÖvrigVerksamhetToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.bokaÖvrigVerksamhetToolStripMenuItem.Text = "Boka övrig verksamhet";
-            // 
-            // bokningslistaToolStripMenuItem
-            // 
-            this.bokningslistaToolStripMenuItem.Name = "bokningslistaToolStripMenuItem";
-            this.bokningslistaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.bokningslistaToolStripMenuItem.Text = "Bokningslista";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(191, 6);
             // 
+            // bokningslistaToolStripMenuItem
+            // 
+            this.bokningslistaToolStripMenuItem.Enabled = false;
+            this.bokningslistaToolStripMenuItem.Name = "bokningslistaToolStripMenuItem";
+            this.bokningslistaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.bokningslistaToolStripMenuItem.Text = "Bokningslista";
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connected_statusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 361);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 482);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(426, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(641, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -221,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 383);
+            this.ClientSize = new System.Drawing.Size(641, 504);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

@@ -110,5 +110,11 @@ namespace golf_system
             anslutTillDatabasToolStripMenuItem.Enabled = true;
             connected_statusLabel.Text = "Frånkopplad";
         }
+
+        private void nyMedlemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var mf = new MemberForm(new Member());
+            mf.ShowDialog();
+        }
     }
 }
