@@ -113,8 +113,10 @@ namespace golf_system
 
         private void nyMedlemToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var mf = new MemberForm(new Member());
+            Member m = new Member();
+            var mf = new MemberForm(ref m);
             mf.ShowDialog();
+            MessageBox.Show(m.FirstName);
         }
     }
 }

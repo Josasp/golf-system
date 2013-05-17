@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.golfId_textBox = new System.Windows.Forms.TextBox();
+            this.lastName_textBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.firstName_textBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.phone_textBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.email_textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.adress_textBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.zipcode_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.city_textBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.membership_comboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.handicap_textBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.paid_checkBox = new System.Windows.Forms.CheckBox();
             this.cancel_button = new System.Windows.Forms.Button();
             this.action_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -62,51 +62,51 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Golf-ID";
             // 
-            // textBox1
+            // golfId_textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 22);
-            this.textBox1.TabIndex = 1;
+            this.golfId_textBox.Location = new System.Drawing.Point(16, 29);
+            this.golfId_textBox.Name = "golfId_textBox";
+            this.golfId_textBox.Size = new System.Drawing.Size(147, 22);
+            this.golfId_textBox.TabIndex = 1;
             // 
-            // textBox2
+            // lastName_textBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 22);
-            this.textBox2.TabIndex = 3;
+            this.lastName_textBox.Location = new System.Drawing.Point(16, 152);
+            this.lastName_textBox.Name = "lastName_textBox";
+            this.lastName_textBox.Size = new System.Drawing.Size(147, 22);
+            this.lastName_textBox.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 136);
+            this.label2.Location = new System.Drawing.Point(13, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Förnamn";
             // 
-            // textBox3
+            // firstName_textBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 152);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(147, 22);
-            this.textBox3.TabIndex = 5;
+            this.firstName_textBox.Location = new System.Drawing.Point(16, 111);
+            this.firstName_textBox.Name = "firstName_textBox";
+            this.firstName_textBox.Size = new System.Drawing.Size(147, 22);
+            this.firstName_textBox.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 95);
+            this.label3.Location = new System.Drawing.Point(13, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Efternamn";
             // 
-            // textBox4
+            // phone_textBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(201, 152);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(207, 22);
-            this.textBox4.TabIndex = 7;
+            this.phone_textBox.Location = new System.Drawing.Point(201, 152);
+            this.phone_textBox.Name = "phone_textBox";
+            this.phone_textBox.Size = new System.Drawing.Size(207, 22);
+            this.phone_textBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -117,12 +117,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Telefonnummer";
             // 
-            // textBox5
+            // email_textBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(201, 193);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(207, 22);
-            this.textBox5.TabIndex = 9;
+            this.email_textBox.Location = new System.Drawing.Point(201, 193);
+            this.email_textBox.Name = "email_textBox";
+            this.email_textBox.Size = new System.Drawing.Size(207, 22);
+            this.email_textBox.TabIndex = 9;
             // 
             // label5
             // 
@@ -133,12 +133,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "E-post";
             // 
-            // textBox6
+            // adress_textBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(201, 29);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(207, 22);
-            this.textBox6.TabIndex = 11;
+            this.adress_textBox.Location = new System.Drawing.Point(201, 29);
+            this.adress_textBox.Name = "adress_textBox";
+            this.adress_textBox.Size = new System.Drawing.Size(207, 22);
+            this.adress_textBox.TabIndex = 11;
             // 
             // label6
             // 
@@ -149,12 +149,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Address";
             // 
-            // textBox7
+            // zipcode_textBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(201, 70);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(93, 22);
-            this.textBox7.TabIndex = 13;
+            this.zipcode_textBox.Location = new System.Drawing.Point(201, 70);
+            this.zipcode_textBox.Name = "zipcode_textBox";
+            this.zipcode_textBox.Size = new System.Drawing.Size(93, 22);
+            this.zipcode_textBox.TabIndex = 13;
             // 
             // label7
             // 
@@ -165,12 +165,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Postnummer";
             // 
-            // textBox8
+            // city_textBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(300, 70);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(108, 22);
-            this.textBox8.TabIndex = 15;
+            this.city_textBox.Location = new System.Drawing.Point(300, 70);
+            this.city_textBox.Name = "city_textBox";
+            this.city_textBox.Size = new System.Drawing.Size(108, 22);
+            this.city_textBox.TabIndex = 15;
             // 
             // label8
             // 
@@ -181,13 +181,13 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Stad";
             // 
-            // comboBox1
+            // membership_comboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(16, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(147, 21);
-            this.comboBox1.TabIndex = 16;
+            this.membership_comboBox.FormattingEnabled = true;
+            this.membership_comboBox.Location = new System.Drawing.Point(16, 234);
+            this.membership_comboBox.Name = "membership_comboBox";
+            this.membership_comboBox.Size = new System.Drawing.Size(147, 21);
+            this.membership_comboBox.TabIndex = 16;
             // 
             // label9
             // 
@@ -198,12 +198,12 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Medlemsstatus";
             // 
-            // textBox9
+            // handicap_textBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(16, 274);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(57, 22);
-            this.textBox9.TabIndex = 19;
+            this.handicap_textBox.Location = new System.Drawing.Point(16, 274);
+            this.handicap_textBox.Name = "handicap_textBox";
+            this.handicap_textBox.Size = new System.Drawing.Size(57, 22);
+            this.handicap_textBox.TabIndex = 19;
             // 
             // label10
             // 
@@ -214,15 +214,15 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Handicap";
             // 
-            // checkBox1
+            // paid_checkBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(201, 236);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(143, 17);
-            this.checkBox1.TabIndex = 20;
-            this.checkBox1.Text = "Medlemsavgift betalad";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.paid_checkBox.AutoSize = true;
+            this.paid_checkBox.Location = new System.Drawing.Point(201, 236);
+            this.paid_checkBox.Name = "paid_checkBox";
+            this.paid_checkBox.Size = new System.Drawing.Size(143, 17);
+            this.paid_checkBox.TabIndex = 20;
+            this.paid_checkBox.Text = "Medlemsavgift betalad";
+            this.paid_checkBox.UseVisualStyleBackColor = true;
             // 
             // cancel_button
             // 
@@ -242,6 +242,7 @@
             this.action_button.TabIndex = 22;
             this.action_button.Text = "Action";
             this.action_button.UseVisualStyleBackColor = true;
+            this.action_button.Click += new System.EventHandler(this.action_button_Click);
             // 
             // MemberForm
             // 
@@ -250,26 +251,26 @@
             this.ClientSize = new System.Drawing.Size(425, 399);
             this.Controls.Add(this.action_button);
             this.Controls.Add(this.cancel_button);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.paid_checkBox);
+            this.Controls.Add(this.handicap_textBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.membership_comboBox);
+            this.Controls.Add(this.city_textBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.zipcode_textBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.adress_textBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.email_textBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.phone_textBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.firstName_textBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lastName_textBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.golfId_textBox);
             this.Controls.Add(this.label1);
             this.Name = "MemberForm";
             this.Text = "Medlem";
@@ -281,26 +282,26 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox golfId_textBox;
+        private System.Windows.Forms.TextBox lastName_textBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox firstName_textBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox phone_textBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox email_textBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox adress_textBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox zipcode_textBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox city_textBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox membership_comboBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox handicap_textBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox paid_checkBox;
         private System.Windows.Forms.Button cancel_button;
         private System.Windows.Forms.Button action_button;
     }
