@@ -54,6 +54,12 @@
     <Compile Include="DatabaseSettings.Designer.cs">
       <DependentUpon>DatabaseSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="MemberlistWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberlistWindow.Designer.cs">
+      <DependentUpon>MemberlistWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Member.cs" />
     <Compile Include="MemberForm.cs">
       <SubType>Form</SubType>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DatabaseSettings.resx">
       <DependentUpon>DatabaseSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberlistWindow.resx">
+      <DependentUpon>MemberlistWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

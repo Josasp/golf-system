@@ -137,10 +137,10 @@
             // 
             // medlemslistaToolStripMenuItem
             // 
-            this.medlemslistaToolStripMenuItem.Enabled = false;
             this.medlemslistaToolStripMenuItem.Name = "medlemslistaToolStripMenuItem";
             this.medlemslistaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.medlemslistaToolStripMenuItem.Text = "Medlemslista";
+            this.medlemslistaToolStripMenuItem.Click += new System.EventHandler(this.medlemslistaToolStripMenuItem_Click);
             // 
             // tävlingarToolStripMenuItem
             // 

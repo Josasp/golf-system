@@ -116,7 +116,31 @@ namespace golf_system
             Member m = new Member();
             var mf = new MemberForm(ref m);
             mf.ShowDialog();
-            MessageBox.Show(m.FirstName);
+        }
+
+        private void medlemslistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Create the empty table data
+            DataTable dt = new DataTable("Table");
+            dt.Columns.Add("golfId", typeof(string));
+            dt.Columns.Add("firstName", typeof(string));
+            dt.Columns.Add("lastName", typeof(string));
+            dt.Columns.Add("membership", typeof(string));
+            dt.Columns.Add("paid", typeof(bool));
+
+            //TODO Replace the example bit with query from database, loop trough data.
+            //Add an example row
+            DataRow dr = dt.NewRow();
+            dr["golfId"] = "910923-001";
+            dr["firstName"] = "Johannes";
+            dr["lastName"] = "Asp";
+            dr["membership"] = "Greenfee";
+            dr["paid"] = true;
+            dt.Rows.Add(dr);
+
+            //Create and show the Memberlist Window
+            var mw = new MemberlistWindow(dt);
+            mw.ShowDialog();
         }
     }
 }
