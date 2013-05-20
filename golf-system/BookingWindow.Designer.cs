@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
+            this.time_dataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.time_comboBox = new System.Windows.Forms.ComboBox();
@@ -44,45 +44,45 @@
             this.Player2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Player3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Player4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.book_button = new System.Windows.Forms.Button();
+            this.edit_button = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.time_dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // monthCalendar1
+            // monthCalendar
             // 
-            this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 2);
-            this.monthCalendar1.Location = new System.Drawing.Point(333, 84);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.ShowWeekNumbers = true;
-            this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar.BackColor = System.Drawing.SystemColors.Window;
+            this.monthCalendar.CalendarDimensions = new System.Drawing.Size(1, 2);
+            this.monthCalendar.Location = new System.Drawing.Point(333, 84);
+            this.monthCalendar.Name = "monthCalendar";
+            this.monthCalendar.ShowWeekNumbers = true;
+            this.monthCalendar.TabIndex = 0;
             // 
-            // dataGridView1
+            // time_dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.time_dataGridView.AllowUserToAddRows = false;
+            this.time_dataGridView.AllowUserToDeleteRows = false;
+            this.time_dataGridView.AllowUserToResizeColumns = false;
+            this.time_dataGridView.AllowUserToResizeRows = false;
+            this.time_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.time_dataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.time_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.time_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Time,
             this.Player1,
             this.Player2,
             this.Player3,
             this.Player4});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 84);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(309, 311);
-            this.dataGridView1.TabIndex = 1;
+            this.time_dataGridView.Location = new System.Drawing.Point(12, 84);
+            this.time_dataGridView.Name = "time_dataGridView";
+            this.time_dataGridView.ReadOnly = true;
+            this.time_dataGridView.RowHeadersVisible = false;
+            this.time_dataGridView.RowTemplate.Height = 24;
+            this.time_dataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.time_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.time_dataGridView.Size = new System.Drawing.Size(309, 311);
+            this.time_dataGridView.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -368,38 +368,38 @@
             this.Player4.Name = "Player4";
             this.Player4.ReadOnly = true;
             // 
-            // button1
+            // book_button
             // 
-            this.button1.Location = new System.Drawing.Point(12, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Boka tid";
-            this.button1.UseVisualStyleBackColor = true;
+            this.book_button.Location = new System.Drawing.Point(12, 401);
+            this.book_button.Name = "book_button";
+            this.book_button.Size = new System.Drawing.Size(75, 23);
+            this.book_button.TabIndex = 3;
+            this.book_button.Text = "Boka tid";
+            this.book_button.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // edit_button
             // 
-            this.button2.Location = new System.Drawing.Point(93, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Ändra tid";
-            this.button2.UseVisualStyleBackColor = true;
+            this.edit_button.Location = new System.Drawing.Point(93, 401);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(75, 23);
+            this.edit_button.TabIndex = 4;
+            this.edit_button.Text = "Ändra tid";
+            this.edit_button.UseVisualStyleBackColor = true;
             // 
             // BookingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 441);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.edit_button);
+            this.Controls.Add(this.book_button);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.time_dataGridView);
+            this.Controls.Add(this.monthCalendar);
             this.Name = "BookingWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Bokningslista";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.time_dataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -408,8 +408,8 @@
 
         #endregion
 
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.DataGridView time_dataGridView;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox players_comboBox;
@@ -424,7 +424,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Player2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Player3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Player4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button book_button;
+        private System.Windows.Forms.Button edit_button;
     }
 }
