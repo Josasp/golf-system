@@ -33,12 +33,12 @@
             this.monthCalendar = new System.Windows.Forms.MonthCalendar();
             this.time_comboBox = new System.Windows.Forms.ComboBox();
             this.date_textBox = new System.Windows.Forms.TextBox();
+            this.action_button = new System.Windows.Forms.Button();
+            this.cancel_button = new System.Windows.Forms.Button();
             this.player4_findPlayer = new golf_system.FindPlayerComponent();
             this.player3_findPlayer = new golf_system.FindPlayerComponent();
             this.player2_findPlayer = new golf_system.FindPlayerComponent();
             this.player1_findPlayer = new golf_system.FindPlayerComponent();
-            this.action_button = new System.Windows.Forms.Button();
-            this.cancel_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,9 +62,11 @@
             // monthCalendar
             // 
             this.monthCalendar.Location = new System.Drawing.Point(24, 48);
+            this.monthCalendar.MaxSelectionCount = 1;
             this.monthCalendar.Name = "monthCalendar";
             this.monthCalendar.TabIndex = 2;
             this.monthCalendar.Visible = false;
+            this.monthCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar_DateChanged);
             // 
             // time_comboBox
             // 
@@ -230,6 +232,26 @@
             this.date_textBox.Enter += new System.EventHandler(this.date_textBox_Enter);
             this.date_textBox.Leave += new System.EventHandler(this.date_textBox_Leave);
             // 
+            // action_button
+            // 
+            this.action_button.Location = new System.Drawing.Point(391, 416);
+            this.action_button.Name = "action_button";
+            this.action_button.Size = new System.Drawing.Size(107, 23);
+            this.action_button.TabIndex = 24;
+            this.action_button.Text = "Action";
+            this.action_button.UseVisualStyleBackColor = true;
+            this.action_button.Click += new System.EventHandler(this.action_button_Click);
+            // 
+            // cancel_button
+            // 
+            this.cancel_button.Location = new System.Drawing.Point(12, 416);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(75, 23);
+            this.cancel_button.TabIndex = 23;
+            this.cancel_button.Text = "Avbryt";
+            this.cancel_button.UseVisualStyleBackColor = true;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
+            // 
             // player4_findPlayer
             // 
             this.player4_findPlayer.GolfId = "";
@@ -271,26 +293,6 @@
             this.player1_findPlayer.Size = new System.Drawing.Size(240, 163);
             this.player1_findPlayer.TabIndex = 5;
             this.player1_findPlayer.TitleText = "Spelare 1";
-            // 
-            // action_button
-            // 
-            this.action_button.Location = new System.Drawing.Point(391, 416);
-            this.action_button.Name = "action_button";
-            this.action_button.Size = new System.Drawing.Size(107, 23);
-            this.action_button.TabIndex = 24;
-            this.action_button.Text = "Action";
-            this.action_button.UseVisualStyleBackColor = true;
-            this.action_button.Click += new System.EventHandler(this.action_button_Click);
-            // 
-            // cancel_button
-            // 
-            this.cancel_button.Location = new System.Drawing.Point(12, 416);
-            this.cancel_button.Name = "cancel_button";
-            this.cancel_button.Size = new System.Drawing.Size(75, 23);
-            this.cancel_button.TabIndex = 23;
-            this.cancel_button.Text = "Avbryt";
-            this.cancel_button.UseVisualStyleBackColor = true;
-            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // BookingForm
             // 

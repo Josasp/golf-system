@@ -46,5 +46,11 @@ namespace golf_system
         {
             this.Close();
         }
+
+        private void monthCalendar_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            date_textBox.Text = monthCalendar.SelectionStart.ToLongDateString();
+            monthCalendar.Visible = false;
+        }
     }
 }
