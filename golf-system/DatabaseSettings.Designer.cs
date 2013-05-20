@@ -178,6 +178,7 @@
             this.Controls.Add(this.address_textBox);
             this.Controls.Add(this.label1);
             this.Name = "DatabaseSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Databasinställningar";
             this.ResumeLayout(false);
             this.PerformLayout();

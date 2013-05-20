@@ -35,11 +35,11 @@
             this.firstName_textBox = new System.Windows.Forms.TextBox();
             this.lastName_textBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.cancel_button = new System.Windows.Forms.Button();
-            this.action_button = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cancel_button = new System.Windows.Forms.Button();
+            this.action_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,6 +113,24 @@
             this.dataGridView.Size = new System.Drawing.Size(359, 240);
             this.dataGridView.TabIndex = 6;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Golf-ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Förnamn";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Efternamn";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // cancel_button
             // 
             this.cancel_button.Location = new System.Drawing.Point(13, 301);
@@ -133,24 +151,6 @@
             this.action_button.UseVisualStyleBackColor = true;
             this.action_button.Click += new System.EventHandler(this.action_button_Click);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Golf-ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Förnamn";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Efternamn";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
             // FindGolfIdDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +166,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FindGolfIdDialog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Sök Golf-ID";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
