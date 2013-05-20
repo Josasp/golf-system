@@ -142,7 +142,16 @@ namespace golf_system
 
             //Create and show the Memberlist Window
             var mw = new MemberlistWindow(dt);
-            mw.ShowDialog();
+            //Sets mw to be a MDI Child, so it cannot leave this area
+            mw.MdiParent = this;
+            mw.Show();
+        }
+
+        private void bookinglist_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var bw = new BookingWindow();
+            bw.MdiParent = this;
+            bw.Show();
         }
     }
 }

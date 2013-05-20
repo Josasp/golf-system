@@ -108,6 +108,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.members_dataGridView);
             this.Name = "MemberlistWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Medlemslista";
             ((System.ComponentModel.ISupportInitialize)(this.members_dataGridView)).EndInit();
             this.toolStrip1.ResumeLayout(false);
