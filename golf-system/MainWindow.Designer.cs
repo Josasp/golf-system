@@ -44,7 +44,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tävlingslistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tidsbokningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bokaStarttidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookStartTime_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bokaÖvrigVerksamhetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.bookinglist_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -174,7 +174,7 @@
             // tidsbokningToolStripMenuItem
             // 
             this.tidsbokningToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bokaStarttidToolStripMenuItem,
+            this.bookStartTime_ToolStripMenuItem,
             this.bokaÖvrigVerksamhetToolStripMenuItem,
             this.toolStripSeparator4,
             this.bookinglist_ToolStripMenuItem});
@@ -182,13 +182,13 @@
             this.tidsbokningToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.tidsbokningToolStripMenuItem.Text = "Tidsbokning";
             // 
-            // bokaStarttidToolStripMenuItem
+            // bookStartTime_ToolStripMenuItem
             // 
-            this.bokaStarttidToolStripMenuItem.Enabled = false;
-            this.bokaStarttidToolStripMenuItem.Name = "bokaStarttidToolStripMenuItem";
-            this.bokaStarttidToolStripMenuItem.RightToLeftAutoMirrorImage = true;
-            this.bokaStarttidToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.bokaStarttidToolStripMenuItem.Text = "Boka starttid";
+            this.bookStartTime_ToolStripMenuItem.Name = "bookStartTime_ToolStripMenuItem";
+            this.bookStartTime_ToolStripMenuItem.RightToLeftAutoMirrorImage = true;
+            this.bookStartTime_ToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.bookStartTime_ToolStripMenuItem.Text = "Boka starttid";
+            this.bookStartTime_ToolStripMenuItem.Click += new System.EventHandler(this.bookStartTime_ToolStripMenuItem_Click);
             // 
             // bokaÖvrigVerksamhetToolStripMenuItem
             // 
@@ -261,7 +261,7 @@
         private System.Windows.Forms.ToolStripMenuItem nyTävlingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tävlingslistaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tidsbokningToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bokaStarttidToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookStartTime_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bokaÖvrigVerksamhetToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;

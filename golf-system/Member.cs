@@ -20,6 +20,7 @@ namespace golf_system
         private String membership = "";
         private String handicap = "";
         private String paid = "";
+        private String gender = "";
 
         public Boolean IsEmpty
         {
@@ -37,7 +38,8 @@ namespace golf_system
                     email.Length < 1 &&
                     membership.Length < 1 &&
                     handicap.Length < 1 &&
-                    paid.Length < 1)
+                    paid.Length < 1 &&
+                    gender.Length < 1)
                 {
                     return true;
                 }
@@ -182,6 +184,18 @@ namespace golf_system
             set
             {
                 paid = value;
+            }
+        }
+
+        public string Gender
+        {
+            get
+            {
+                return gender;
+            }
+            set
+            {
+                gender = value;
             }
         }
     }

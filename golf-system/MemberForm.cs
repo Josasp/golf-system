@@ -58,6 +58,7 @@ namespace golf_system
             m.Email = email_textBox.Text;
             m.Handicap = handicap_textBox.Text;
             m.Paid = paid_checkBox.Checked ? "1" : "0";
+            m.Gender = gender_comboBox.Text;
 
             this.Close();
         }

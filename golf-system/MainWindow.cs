@@ -153,5 +153,11 @@ namespace golf_system
             bw.MdiParent = this;
             bw.Show();
         }
+
+        private void bookStartTime_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var bf = new BookingForm();
+            bf.ShowDialog();
+        }
     }
 }

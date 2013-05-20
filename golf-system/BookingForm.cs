@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace golf_system
+{
+    public partial class BookingForm : Form
+    {
+        public BookingForm()
+        {
+            InitializeComponent();
+        }
+
+        private void player3_findPlayer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_textBox_Enter(object sender, EventArgs e)
+        {
+            monthCalendar.Visible = true;
+        }
+
+        private void date_textBox_Leave(object sender, EventArgs e)
+        {
+            monthCalendar.Visible = false;
+        }
+
+        private void cancel_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void action_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

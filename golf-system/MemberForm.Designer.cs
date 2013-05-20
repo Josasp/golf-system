@@ -51,6 +51,8 @@
             this.paid_checkBox = new System.Windows.Forms.CheckBox();
             this.cancel_button = new System.Windows.Forms.Button();
             this.action_button = new System.Windows.Forms.Button();
+            this.gender_comboBox = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -184,7 +186,7 @@
             // membership_comboBox
             // 
             this.membership_comboBox.FormattingEnabled = true;
-            this.membership_comboBox.Location = new System.Drawing.Point(16, 234);
+            this.membership_comboBox.Location = new System.Drawing.Point(16, 275);
             this.membership_comboBox.Name = "membership_comboBox";
             this.membership_comboBox.Size = new System.Drawing.Size(147, 21);
             this.membership_comboBox.TabIndex = 16;
@@ -192,7 +194,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 218);
+            this.label9.Location = new System.Drawing.Point(13, 259);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 13);
             this.label9.TabIndex = 17;
@@ -200,7 +202,7 @@
             // 
             // handicap_textBox
             // 
-            this.handicap_textBox.Location = new System.Drawing.Point(16, 274);
+            this.handicap_textBox.Location = new System.Drawing.Point(16, 315);
             this.handicap_textBox.Name = "handicap_textBox";
             this.handicap_textBox.Size = new System.Drawing.Size(57, 22);
             this.handicap_textBox.TabIndex = 19;
@@ -208,7 +210,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 258);
+            this.label10.Location = new System.Drawing.Point(13, 299);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 13);
             this.label10.TabIndex = 18;
@@ -217,7 +219,7 @@
             // paid_checkBox
             // 
             this.paid_checkBox.AutoSize = true;
-            this.paid_checkBox.Location = new System.Drawing.Point(201, 236);
+            this.paid_checkBox.Location = new System.Drawing.Point(201, 277);
             this.paid_checkBox.Name = "paid_checkBox";
             this.paid_checkBox.Size = new System.Drawing.Size(143, 17);
             this.paid_checkBox.TabIndex = 20;
@@ -226,7 +228,7 @@
             // 
             // cancel_button
             // 
-            this.cancel_button.Location = new System.Drawing.Point(16, 364);
+            this.cancel_button.Location = new System.Drawing.Point(12, 397);
             this.cancel_button.Name = "cancel_button";
             this.cancel_button.Size = new System.Drawing.Size(75, 23);
             this.cancel_button.TabIndex = 21;
@@ -236,7 +238,7 @@
             // 
             // action_button
             // 
-            this.action_button.Location = new System.Drawing.Point(300, 364);
+            this.action_button.Location = new System.Drawing.Point(296, 397);
             this.action_button.Name = "action_button";
             this.action_button.Size = new System.Drawing.Size(107, 23);
             this.action_button.TabIndex = 22;
@@ -244,11 +246,34 @@
             this.action_button.UseVisualStyleBackColor = true;
             this.action_button.Click += new System.EventHandler(this.action_button_Click);
             // 
+            // gender_comboBox
+            // 
+            this.gender_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gender_comboBox.FormattingEnabled = true;
+            this.gender_comboBox.Items.AddRange(new object[] {
+            "Man",
+            "Kvinna"});
+            this.gender_comboBox.Location = new System.Drawing.Point(16, 193);
+            this.gender_comboBox.Name = "gender_comboBox";
+            this.gender_comboBox.Size = new System.Drawing.Size(75, 21);
+            this.gender_comboBox.TabIndex = 23;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(13, 177);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Kön";
+            // 
             // MemberForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 399);
+            this.ClientSize = new System.Drawing.Size(425, 432);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.gender_comboBox);
             this.Controls.Add(this.action_button);
             this.Controls.Add(this.cancel_button);
             this.Controls.Add(this.paid_checkBox);
@@ -304,5 +329,7 @@
         private System.Windows.Forms.CheckBox paid_checkBox;
         private System.Windows.Forms.Button cancel_button;
         private System.Windows.Forms.Button action_button;
+        private System.Windows.Forms.ComboBox gender_comboBox;
+        private System.Windows.Forms.Label label11;
     }
 }
