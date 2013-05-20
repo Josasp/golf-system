@@ -67,5 +67,11 @@ namespace golf_system
                 handicap_textBox.Text = m.Handicap; 
             }
         }
+
+        private void find_button_Click(object sender, EventArgs e)
+        {
+            var fgd = new FindGolfIdDialog(ref golfId_textBox);
+            fgd.ShowDialog();
+        }
     }
 }

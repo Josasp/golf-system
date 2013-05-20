@@ -35,7 +35,7 @@
             this.handicap_textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.gender_textBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.find_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.name_textBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.groupBox.Controls.Add(this.handicap_textBox);
             this.groupBox.Controls.Add(this.label5);
             this.groupBox.Controls.Add(this.gender_textBox);
-            this.groupBox.Controls.Add(this.button1);
+            this.groupBox.Controls.Add(this.find_button);
             this.groupBox.Controls.Add(this.label4);
             this.groupBox.Controls.Add(this.name_textBox);
             this.groupBox.Controls.Add(this.label3);
@@ -114,14 +114,15 @@
             this.gender_textBox.Size = new System.Drawing.Size(41, 22);
             this.gender_textBox.TabIndex = 12;
             // 
-            // button1
+            // find_button
             // 
-            this.button1.Location = new System.Drawing.Point(175, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Sök";
-            this.button1.UseVisualStyleBackColor = true;
+            this.find_button.Location = new System.Drawing.Point(175, 33);
+            this.find_button.Name = "find_button";
+            this.find_button.Size = new System.Drawing.Size(44, 23);
+            this.find_button.TabIndex = 10;
+            this.find_button.Text = "Sök";
+            this.find_button.UseVisualStyleBackColor = true;
+            this.find_button.Click += new System.EventHandler(this.find_button_Click);
             // 
             // label4
             // 
@@ -178,7 +179,7 @@
         private System.Windows.Forms.TextBox handicap_textBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox gender_textBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button find_button;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox name_textBox;
         private System.Windows.Forms.Label label3;

@@ -66,6 +66,12 @@
     <Compile Include="DatabaseSettings.Designer.cs">
       <DependentUpon>DatabaseSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="FindGolfIdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindGolfIdDialog.Designer.cs">
+      <DependentUpon>FindGolfIdDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemberlistWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DatabaseSettings.resx">
       <DependentUpon>DatabaseSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindGolfIdDialog.resx">
+      <DependentUpon>FindGolfIdDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberlistWindow.resx">
       <DependentUpon>MemberlistWindow.cs</DependentUpon>
