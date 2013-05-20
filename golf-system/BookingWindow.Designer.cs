@@ -376,6 +376,7 @@
             this.book_button.TabIndex = 3;
             this.book_button.Text = "Boka tid";
             this.book_button.UseVisualStyleBackColor = true;
+            this.book_button.Click += new System.EventHandler(this.book_button_Click);
             // 
             // edit_button
             // 

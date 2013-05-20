@@ -12,10 +12,17 @@ namespace golf_system
 {
     public partial class BookingForm : Form
     {
+        public DateTime Date
+        {
+            get { return monthCalendar.SelectionStart; }
+            set { monthCalendar.SetDate(value); }
+        }
+
         public BookingForm()
         {
             InitializeComponent();
         }
+
 
         private void player3_findPlayer_Load(object sender, EventArgs e)
         {
@@ -51,6 +58,7 @@ namespace golf_system
         {
             date_textBox.Text = monthCalendar.SelectionStart.ToLongDateString();
             monthCalendar.Visible = false;
+            
         }
     }
 }
